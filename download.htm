@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <!--
+									  +
+									++++
+								   ++++++
+								  ++++++++
+								 ++++++++++
+								++++++++++++
+								++++++++++++,
+							   ++++++++++++++
+							   ++++++++++++++,
+							  ,+++++++++++++++
+			  +??????????????333++++++++++++++
+		  +++++++++++++I3333333333++++++++++++
+		++++++++++++733333333333333+++++++++++
+	   +++++++++++333333333333333333++++++++++
+	   +++++++++   333333333333333333+++++++++
+	   ++++++++     33333333333333333+++++++++
+	   ++++++        33333333333333333+++++++
+	   +++++          3333333333333333+++++++
+	   ++++             33333333333333++++++
+	   +++                3333333333333++++
+		++                  33333333333+++
+							  333333337++
+								 33333++
+									33+
+
+  -->
+	<meta name="MSSmartTagsPreventParsing" content="true" /><!--[if lte IE 9]><meta http-equiv="X-UA-Compatible" content="IE=Edge"/><script type="text/javascript">(window.NREUM||(NREUM={})).init={ajax:{deny_list:["bam.nr-data.net"]}};(window.NREUM||(NREUM={})).loader_config={licenseKey:"ab0374a39e",applicationID:"112197439"};window.NREUM||(NREUM={}),__nr_require=function(t,e,n){function r(n){if(!e[n]){var i=e[n]={exports:{}};t[n][0].call(i.exports,function(e){var i=t[n][1][e];return r(i||e)},i,i.exports)}return e[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var i=0;i<n.length;i++)r(n[i]);return r}({1:[function(t,e,n){function r(){}function i(t,e,n,r){return function(){return s.recordSupportability("API/"+e+"/called"),o(t+e,[u.now()].concat(c(arguments)),n?null:this,r),n?void 0:this}}var o=t("handle"),a=t(9),c=t(10),f=t("ee").get("tracer"),u=t("loader"),s=t(4),d=NREUM;"undefined"==typeof window.newrelic&&(newrelic=d);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],l="api-",v=l+"ixn-";a(p,function(t,e){d[e]=i(l,e,!0,"api")}),d.addPageAction=i(l,"addPageAction",!0),d.setCurrentRouteName=i(l,"routeName",!0),e.exports=newrelic,d.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(t,e){var n={},r=this,i="function"==typeof e;return o(v+"tracer",[u.now(),t,n],r),function(){if(f.emit((i?"":"no-")+"fn-start",[u.now(),r,i],n),i)try{return e.apply(this,arguments)}catch(t){throw f.emit("fn-err",[arguments,this,t],n),t}finally{f.emit("fn-end",[u.now()],n)}}}};a("actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(t,e){m[e]=i(v,e)}),newrelic.noticeError=function(t,e){"string"==typeof t&&(t=new Error(t)),s.recordSupportability("API/noticeError/called"),o("err",[t,u.now(),!1,e])}},{}],2:[function(t,e,n){function r(t){if(NREUM.init){for(var e=NREUM.init,n=t.split("."),r=0;r<n.length-1;r++)if(e=e[n[r]],"object"!=typeof e)return;return e=e[n[n.length-1]]}}e.exports={getConfiguration:r}},{}],3:[function(t,e,n){var r=!1;try{var i=Object.defineProperty({},"passive",{get:function(){r=!0}});window.addEventListener("testPassive",null,i),window.removeEventListener("testPassive",null,i)}catch(o){}e.exports=function(t){return r?{passive:!0,capture:!!t}:!!t}},{}],4:[function(t,e,n){function r(t,e){var n=[a,t,{name:t},e];return o("storeMetric",n,null,"api"),n}function i(t,e){var n=[c,t,{name:t},e];return o("storeEventMetrics",n,null,"api"),n}var o=t("handle"),a="sm",c="cm";e.exports={constants:{SUPPORTABILITY_METRIC:a,CUSTOM_METRIC:c},recordSupportability:r,recordCustom:i}},{}],5:[function(t,e,n){function r(){return c.exists&&performance.now?Math.round(performance.now()):(o=Math.max((new Date).getTime(),o))-a}function i(){return o}var o=(new Date).getTime(),a=o,c=t(11);e.exports=r,e.exports.offset=a,e.exports.getLastTimestamp=i},{}],6:[function(t,e,n){function r(t,e){var n=t.getEntries();n.forEach(function(t){"first-paint"===t.name?l("timing",["fp",Math.floor(t.startTime)]):"first-contentful-paint"===t.name&&l("timing",["fcp",Math.floor(t.startTime)])})}function i(t,e){var n=t.getEntries();if(n.length>0){var r=n[n.length-1];if(u&&u<r.startTime)return;var i=[r],o=a({});o&&i.push(o),l("lcp",i)}}function o(t){t.getEntries().forEach(function(t){t.hadRecentInput||l("cls",[t])})}function a(t){var e=navigator.connection||navigator.mozConnection||navigator.webkitConnection;if(e)return e.type&&(t["net-type"]=e.type),e.effectiveType&&(t["net-etype"]=e.effectiveType),e.rtt&&(t["net-rtt"]=e.rtt),e.downlink&&(t["net-dlink"]=e.downlink),t}function c(t){if(t instanceof y&&!w){var e=Math.round(t.timeStamp),n={type:t.type};a(n),e<=v.now()?n.fid=v.now()-e:e>v.offset&&e<=Date.now()?(e-=v.offset,n.fid=v.now()-e):e=v.now(),w=!0,l("timing",["fi",e,n])}}function f(t){"hidden"===t&&(u=v.now(),l("pageHide",[u]))}if(!("init"in NREUM&&"page_view_timing"in NREUM.init&&"enabled"in NREUM.init.page_view_timing&&NREUM.init.page_view_timing.enabled===!1)){var u,s,d,p,l=t("handle"),v=t("loader"),m=t(8),g=t(3),y=NREUM.o.EV;if("PerformanceObserver"in window&&"function"==typeof window.PerformanceObserver){s=new PerformanceObserver(r);try{s.observe({entryTypes:["paint"]})}catch(h){}d=new PerformanceObserver(i);try{d.observe({entryTypes:["largest-contentful-paint"]})}catch(h){}p=new PerformanceObserver(o);try{p.observe({type:"layout-shift",buffered:!0})}catch(h){}}if("addEventListener"in document){var w=!1,b=["click","keydown","mousedown","pointerdown","touchstart"];b.forEach(function(t){document.addEventListener(t,c,g(!1))})}m(f)}},{}],7:[function(t,e,n){function r(t,e){if(!i)return!1;if(t!==i)return!1;if(!e)return!0;if(!o)return!1;for(var n=o.split("."),r=e.split("."),a=0;a<r.length;a++)if(r[a]!==n[a])return!1;return!0}var i=null,o=null,a=/Version\/(\S+)\s+Safari/;if(navigator.userAgent){var c=navigator.userAgent,f=c.match(a);f&&c.indexOf("Chrome")===-1&&c.indexOf("Chromium")===-1&&(i="Safari",o=f[1])}e.exports={agent:i,version:o,match:r}},{}],8:[function(t,e,n){function r(t){function e(){t(c&&document[c]?document[c]:document[o]?"hidden":"visible")}"addEventListener"in document&&a&&document.addEventListener(a,e,i(!1))}var i=t(3);e.exports=r;var o,a,c;"undefined"!=typeof document.hidden?(o="hidden",a="visibilitychange",c="visibilityState"):"undefined"!=typeof document.msHidden?(o="msHidden",a="msvisibilitychange"):"undefined"!=typeof document.webkitHidden&&(o="webkitHidden",a="webkitvisibilitychange",c="webkitVisibilityState")},{}],9:[function(t,e,n){function r(t,e){var n=[],r="",o=0;for(r in t)i.call(t,r)&&(n[o]=e(r,t[r]),o+=1);return n}var i=Object.prototype.hasOwnProperty;e.exports=r},{}],10:[function(t,e,n){function r(t,e,n){e||(e=0),"undefined"==typeof n&&(n=t?t.length:0);for(var r=-1,i=n-e||0,o=Array(i<0?0:i);++r<i;)o[r]=t[e+r];return o}e.exports=r},{}],11:[function(t,e,n){e.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(t,e,n){function r(){}function i(t){function e(t){return t&&t instanceof r?t:t?u(t,f,a):a()}function n(n,r,i,o,a){if(a!==!1&&(a=!0),!l.aborted||o){t&&a&&t(n,r,i);for(var c=e(i),f=m(n),u=f.length,s=0;s<u;s++)f[s].apply(c,r);var p=d[w[n]];return p&&p.push([b,n,r,c]),c}}function o(t,e){h[t]=m(t).concat(e)}function v(t,e){var n=h[t];if(n)for(var r=0;r<n.length;r++)n[r]===e&&n.splice(r,1)}function m(t){return h[t]||[]}function g(t){return p[t]=p[t]||i(n)}function y(t,e){l.aborted||s(t,function(t,n){e=e||"feature",w[n]=e,e in d||(d[e]=[])})}var h={},w={},b={on:o,addEventListener:o,removeEventListener:v,emit:n,get:g,listeners:m,context:e,buffer:y,abort:c,aborted:!1};return b}function o(t){return u(t,f,a)}function a(){return new r}function c(){(d.api||d.feature)&&(l.aborted=!0,d=l.backlog={})}var f="nr@context",u=t("gos"),s=t(9),d={},p={},l=e.exports=i();e.exports.getOrSetContext=o,l.backlog=d},{}],gos:[function(t,e,n){function r(t,e,n){if(i.call(t,e))return t[e];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(t,e,{value:r,writable:!0,enumerable:!1}),r}catch(o){}return t[e]=r,r}var i=Object.prototype.hasOwnProperty;e.exports=r},{}],handle:[function(t,e,n){function r(t,e,n,r){i.buffer([t],r),i.emit(t,e,n)}var i=t("ee").get("handle");e.exports=r,r.ee=i},{}],id:[function(t,e,n){function r(t){var e=typeof t;return!t||"object"!==e&&"function"!==e?-1:t===window?0:a(t,o,function(){return i++})}var i=1,o="nr@id",a=t("gos");e.exports=r},{}],loader:[function(t,e,n){function r(){if(!M++){var t=T.info=NREUM.info,e=m.getElementsByTagName("script")[0];if(setTimeout(u.abort,3e4),!(t&&t.licenseKey&&t.applicationID&&e))return u.abort();f(x,function(e,n){t[e]||(t[e]=n)});var n=a();c("mark",["onload",n+T.offset],null,"api"),c("timing",["load",n]);var r=m.createElement("script");0===t.agent.indexOf("http://")||0===t.agent.indexOf("https://")?r.src=t.agent:r.src=l+"://"+t.agent,e.parentNode.insertBefore(r,e)}}function i(){"complete"===m.readyState&&o()}function o(){c("mark",["domContent",a()+T.offset],null,"api")}var a=t(5),c=t("handle"),f=t(9),u=t("ee"),s=t(7),d=t(2),p=t(3),l=d.getConfiguration("ssl")===!1?"http":"https",v=window,m=v.document,g="addEventListener",y="attachEvent",h=v.XMLHttpRequest,w=h&&h.prototype,b=!1;NREUM.o={ST:setTimeout,SI:v.setImmediate,CT:clearTimeout,XHR:h,REQ:v.Request,EV:v.Event,PR:v.Promise,MO:v.MutationObserver};var E=""+location,x={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1216.min.js"},O=h&&w&&w[g]&&!/CriOS/.test(navigator.userAgent),T=e.exports={offset:a.getLastTimestamp(),now:a,origin:E,features:{},xhrWrappable:O,userAgent:s,disabled:b};if(!b){t(1),t(6),m[g]?(m[g]("DOMContentLoaded",o,p(!1)),v[g]("load",r,p(!1))):(m[y]("onreadystatechange",i),v[y]("onload",r)),c("mark",["firstbyte",a.getLastTimestamp()],null,"api");var M=0}},{}],"wrap-function":[function(t,e,n){function r(t,e){function n(e,n,r,f,u){function nrWrapper(){var o,a,s,p;try{a=this,o=d(arguments),s="function"==typeof r?r(o,a):r||{}}catch(l){i([l,"",[o,a,f],s],t)}c(n+"start",[o,a,f],s,u);try{return p=e.apply(a,o)}catch(v){throw c(n+"err",[o,a,v],s,u),v}finally{c(n+"end",[o,a,p],s,u)}}return a(e)?e:(n||(n=""),nrWrapper[p]=e,o(e,nrWrapper,t),nrWrapper)}function r(t,e,r,i,o){r||(r="");var c,f,u,s="-"===r.charAt(0);for(u=0;u<e.length;u++)f=e[u],c=t[f],a(c)||(t[f]=n(c,s?f+r:r,i,f,o))}function c(n,r,o,a){if(!v||e){var c=v;v=!0;try{t.emit(n,r,o,e,a)}catch(f){i([f,n,r,o],t)}v=c}}return t||(t=s),n.inPlace=r,n.flag=p,n}function i(t,e){e||(e=s);try{e.emit("internal-error",t)}catch(n){}}function o(t,e,n){if(Object.defineProperty&&Object.keys)try{var r=Object.keys(t);return r.forEach(function(n){Object.defineProperty(e,n,{get:function(){return t[n]},set:function(e){return t[n]=e,e}})}),e}catch(o){i([o],n)}for(var a in t)l.call(t,a)&&(e[a]=t[a]);return e}function a(t){return!(t&&t instanceof Function&&t.apply&&!t[p])}function c(t,e){var n=e(t);return n[p]=t,o(t,n,s),n}function f(t,e,n){var r=t[e];t[e]=c(r,n)}function u(){for(var t=arguments.length,e=new Array(t),n=0;n<t;++n)e[n]=arguments[n];return e}var s=t("ee"),d=t(10),p="nr@original",l=Object.prototype.hasOwnProperty,v=!1;e.exports=r,e.exports.wrapFunction=c,e.exports.wrapInPlace=f,e.exports.argsToArray=u},{}]},{},["loader"]);</script><![endif]-->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+	<title>designX - MIT Office of Innovation</title>
+	
+	<!-- This site is optimized with the Yoast SEO plugin v14.6.1 - https://yoast.com/wordpress/plugins/seo/ -->
+	<meta name="robots" content="index, follow" />
+	<meta name="googlebot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+	<meta name="bingbot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+	<link rel="canonical" href="https://innovation.mit.edu/resource/designx/" />
+	<meta property="og:locale" content="en_US" />
+	<meta property="og:type" content="article" />
+	<meta property="og:title" content="designX - MIT Office of Innovation" />
+	<meta property="og:description" content="An entrepreneurial accelerator for student ventures, with a vision to transform the built environment, media and design" />
+	<meta property="og:url" content="https://innovation.mit.edu/resource/designx/" />
+	<meta property="og:site_name" content="MIT Office of Innovation" />
+	<meta property="article:modified_time" content="2019-07-11T18:28:23+00:00" />
+	<meta property="og:image" content="https://innovation.mit.edu/assets/arch-2.jpg" />
+	<meta property="og:image:width" content="2000" />
+	<meta property="og:image:height" content="1370" />
+	<meta name="twitter:card" content="summary" />
+	<script type="application/ld+json" class="yoast-schema-graph">{"@context":"https://schema.org","@graph":[{"@type":"WebSite","@id":"https://innovation.mit.edu/#website","url":"https://innovation.mit.edu/","name":"MIT Office of Innovation","description":"Supporting the process of innovation from idea through impact","potentialAction":[{"@type":"SearchAction","target":"https://innovation.mit.edu/?s={search_term_string}","query-input":"required name=search_term_string"}],"inLanguage":"en-US"},{"@type":"ImageObject","@id":"https://innovation.mit.edu/resource/designx/#primaryimage","inLanguage":"en-US","url":"https://innovation.mit.edu/assets/arch-2.jpg","width":2000,"height":1370},{"@type":"WebPage","@id":"https://innovation.mit.edu/resource/designx/#webpage","url":"https://innovation.mit.edu/resource/designx/","name":"designX - MIT Office of Innovation","isPartOf":{"@id":"https://innovation.mit.edu/#website"},"primaryImageOfPage":{"@id":"https://innovation.mit.edu/resource/designx/#primaryimage"},"datePublished":"2016-07-13T15:56:14+00:00","dateModified":"2019-07-11T18:28:23+00:00","inLanguage":"en-US","potentialAction":[{"@type":"ReadAction","target":["https://innovation.mit.edu/resource/designx/"]}]}]}</script>
+	<!-- / Yoast SEO plugin. -->
+
+
+<link rel='dns-prefetch' href='//s.w.org' />
+<!-- This site uses the Google Analytics by MonsterInsights plugin v7.11.0 - Using Analytics tracking - https://www.monsterinsights.com/ -->
+<script type="text/javascript" data-cfasync="false">
+	var mi_version         = '7.11.0';
+	var mi_track_user      = true;
+	var mi_no_track_reason = '';
+	
+	var disableStr = 'ga-disable-UA-73717862-1';
+
+	/* Function to detect opted out users */
+	function __gaTrackerIsOptedOut() {
+		return document.cookie.indexOf(disableStr + '=true') > -1;
+	}
+
+	/* Disable tracking if the opt-out cookie exists. */
+	if ( __gaTrackerIsOptedOut() ) {
+		window[disableStr] = true;
+	}
+
+	/* Opt-out function */
+	function __gaTrackerOptout() {
+	  document.cookie = disableStr + '=true; expires=Thu, 31 Dec 2099 23:59:59 UTC; path=/';
+	  window[disableStr] = true;
+	}
+
+	if ( 'undefined' === typeof gaOptout ) {
+		function gaOptout() {
+			__gaTrackerOptout();
+		}
+	}
+	
+	if ( mi_track_user ) {
+		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+			m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		})(window,document,'script','//www.google-analytics.com/analytics.js','__gaTracker');
+
+		__gaTracker('create', 'UA-73717862-1', 'auto');
+		__gaTracker('set', 'forceSSL', true);
+		__gaTracker('send','pageview');
+	} else {
+		console.log( "" );
+		(function() {
+			/* https://developers.google.com/analytics/devguides/collection/analyticsjs/ */
+			var noopfn = function() {
+				return null;
+			};
+			var noopnullfn = function() {
+				return null;
+			};
+			var Tracker = function() {
+				return null;
+			};
+			var p = Tracker.prototype;
+			p.get = noopfn;
+			p.set = noopfn;
+			p.send = noopfn;
+			var __gaTracker = function() {
+				var len = arguments.length;
+				if ( len === 0 ) {
+					return;
+				}
+				var f = arguments[len-1];
+				if ( typeof f !== 'object' || f === null || typeof f.hitCallback !== 'function' ) {
+					console.log( 'Not running function __gaTracker(' + arguments[0] + " ....) because you are not being tracked. " + mi_no_track_reason );
+					return;
+				}
+				try {
+					f.hitCallback();
+				} catch (ex) {
+
+				}
+			};
+			__gaTracker.create = function() {
+				return new Tracker();
+			};
+			__gaTracker.getByName = noopnullfn;
+			__gaTracker.getAll = function() {
+				return [];
+			};
+			__gaTracker.remove = noopfn;
+			window['__gaTracker'] = __gaTracker;
+					})();
+		}
+</script>
+<!-- / Google Analytics by MonsterInsights -->
+<link rel='stylesheet' id='wp-block-library-css'  href='https://innovation.mit.edu/wp-includes/css/dist/block-library/style.min.css?ver=d29507f82ac33bae16bc2d5be3851a48' type='text/css' media='all' />
+<link rel='stylesheet' id='style-css'  href='https://innovation.mit.edu/wp-content/themes/mit-ii/ui/css/style.css?update=82020' type='text/css' media='screen' />
+<link rel='stylesheet' id='print-css'  href='https://innovation.mit.edu/wp-content/themes/mit-ii/ui/css/print.css' type='text/css' media='print' />
+<script type='text/javascript'>
+/* <![CDATA[ */
+var monsterinsights_frontend = {"js_events_tracking":"true","download_extensions":"doc,pdf,ppt,zip,xls,docx,pptx,xlsx","inbound_paths":"[]","home_url":"https:\/\/innovation.mit.edu","hash_tracking":"false"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://innovation.mit.edu/wp-content/plugins/google-analytics-for-wordpress/assets/js/frontend.min.js?ver=7.11.0'></script>
+<script type='text/javascript' src='https://innovation.mit.edu/wp-content/themes/mit-ii/ui/js/modernizr.js'></script>
+<script type='text/javascript' src='https://innovation.mit.edu/wp-content/themes/mit-ii/ui/js/jquery.js'></script>
+<link rel='https://api.w.org/' href='https://innovation.mit.edu/wp-json/' />
+<link rel='shortlink' href='https://innovation.mit.edu/?p=4179' />
+<link rel="alternate" type="application/json+oembed" href="https://innovation.mit.edu/wp-json/oembed/1.0/embed?url=https%3A%2F%2Finnovation.mit.edu%2Fresource%2Fdesignx%2F" />
+<link rel="alternate" type="text/xml+oembed" href="https://innovation.mit.edu/wp-json/oembed/1.0/embed?url=https%3A%2F%2Finnovation.mit.edu%2Fresource%2Fdesignx%2F&#038;format=xml" />
+<script type="text/javascript">
+(function(url){
+	if(/(?:Chrome\/26\.0\.1410\.63 Safari\/537\.31|WordfenceTestMonBot)/.test(navigator.userAgent)){ return; }
+	var addEvent = function(evt, handler) {
+		if (window.addEventListener) {
+			document.addEventListener(evt, handler, false);
+		} else if (window.attachEvent) {
+			document.attachEvent('on' + evt, handler);
+		}
+	};
+	var removeEvent = function(evt, handler) {
+		if (window.removeEventListener) {
+			document.removeEventListener(evt, handler, false);
+		} else if (window.detachEvent) {
+			document.detachEvent('on' + evt, handler);
+		}
+	};
+	var evts = 'contextmenu dblclick drag dragend dragenter dragleave dragover dragstart drop keydown keypress keyup mousedown mousemove mouseout mouseover mouseup mousewheel scroll'.split(' ');
+	var logHuman = function() {
+		if (window.wfLogHumanRan) { return; }
+		window.wfLogHumanRan = true;
+		var wfscr = document.createElement('script');
+		wfscr.type = 'text/javascript';
+		wfscr.async = true;
+		wfscr.src = url + '&r=' + Math.random();
+		(document.getElementsByTagName('head')[0]||document.getElementsByTagName('body')[0]).appendChild(wfscr);
+		for (var i = 0; i < evts.length; i++) {
+			removeEvent(evts[i], logHuman);
+		}
+	};
+	for (var i = 0; i < evts.length; i++) {
+		addEvent(evts[i], logHuman);
+	}
+})('//innovation.mit.edu/?wordfence_lh=1&hid=899F6513997A4361B10757D42E2379D2');
+</script>	<script type="text/javascript">var switchTo5x=true;</script>
+	<script type="text/javascript" src="https://ws.sharethis.com/button/buttons.js"></script>
+	<script type="text/javascript">stLight.options({publisher: "5734e145-71fd-43b4-9c43-6f1382c77d23", doNotHash: false, doNotCopy: false, hashAddressBar: false,   onhover: false});</script>
+
+	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+	<link rel="manifest" href="/site.webmanifest">
+	<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#a31f34">
+	<meta name="msapplication-TileColor" content="#ffffff">
+	<meta name="theme-color" content="#ffffff">
+</head>
+<body class="resource-template-default single single-resource postid-4179 chrome interior">
+<!--[if lt IE 9]><iframe src="/unsupported.html" frameborder="0" scrolling="no" id="no_ie6"></iframe><![endif]-->
+
+<header>
+	<div class="top-bar">
+		<div class="wrapper clearfix">
+			<form action="https://innovation.mit.edu/" class="search">
+				<input type="text" placeholder="Search" name="s">
+			</form>
+			<nav class="social">
+				<ul>
+					<li class="text-link"><a href="https://innovation.mit.edu/wisdm/"><img src="https://innovation.mit.edu/wp-content/themes/mit-ii/ui/images/WISDMColorLine.png" alt="WISDM" style="width: 78px; display: inline-block; position: relative; top: 3px;"></a></li>
+											<li><a target="_blank" href="https://www.instagram.com/mitinnovation/"><i class="social-instagram"></i></a></li>
+											<li><a target="_blank" href="https://www.linkedin.com/company/10527732?trk=tyah&trkInfo=clickedVertical%3Acompany%2CclickedEntityId%3A10527732%2Cidx%3A2-1-2%2CtarId%3A1461352058605%2Ctas%3Amit%20innovation%20in"><i class="social-linkedin"></i></a></li>
+											<li><a target="_blank" href="https://twitter.com/MIT_Innovation"><i class="social-twitter"></i></a></li>
+					
+				</ul>
+			</nav>
+		</div>
+	</div>
+	<div class="main-navigation">
+		<div class="wrapper clearfix">
+			<span class="logo">
+				<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+					 viewBox="0 0 240.509 54" style="enable-background:new 0 0 240.509 54;" xml:space="preserve">
+				<a xlink:href="https://www.mit.edu" target="_blank">
+					<g>
+						<g>
+							<rect x="52" y="8.007" style="fill:#EDEDED;" width="20" height="8"/>
+						</g>
+						<g>
+							<rect x="13" y="8.007" style="fill:#EDEDED;" width="8" height="26"/>
+						</g>
+						<g>
+							<rect x="26" y="8.007" style="fill:#EDEDED;" width="8" height="38"/>
+						</g>
+						<g>
+							<rect y="8.007" style="fill:#EDEDED;" width="8" height="38"/>
+						</g>
+						<g>
+							<rect x="52" y="21.007" style="fill:#EDEDED;" width="8" height="25"/>
+						</g>
+						<g>
+							<rect x="39" y="8.007" style="fill:#EDEDED;" width="8" height="8"/>
+						</g>
+						<g>
+							<rect x="39" y="21.007" style="fill:#9A9A9A;" width="8" height="25"/>
+						</g>
+					</g>
+				</a>
+				<a xlink:href="https://innovation.mit.edu/">
+					<g>
+						<rect x="88" style="fill:#EDEDED;" width="1" height="54"/>
+						<g>
+							<path style="fill:#EDEDED;" d="M104.443,15.384c0-5.266,1.449-8.945,6.875-8.945s6.875,3.679,6.875,8.945
+								c0,5.266-1.449,8.945-6.875,8.945S104.443,20.65,104.443,15.384z M108.168,15.384c0,4.024,0.874,5.611,3.15,5.611
+								s3.15-1.587,3.15-5.611c0-4.024-0.874-5.611-3.15-5.611S108.168,11.36,108.168,15.384z"/>
+							<path style="fill:#EDEDED;" d="M142.134,24.099c0,0-0.482,0.092-1.058,0.092c-1.978,0-3.541-1.012-3.541-3.242v-5.381h-4.347v8.439
+								h-3.679v-8.439h-4.599v8.439h-3.679v-8.439h-1.863v-2.438l1.863-0.506v-0.897c0-4.3,3.955-5.289,7.266-5.289
+								c1.495,0,2.874,0.161,4.554,0.506c1.126-0.368,2.414-0.506,3.609-0.506c1.725,0,3.15,0.207,4.53,0.529v3.058
+								c-1.311-0.299-2.368-0.529-4.185-0.529c-2.116,0-3.818,0.506-3.818,2.23v0.782h8.003v7.933c0,0.437,0.207,0.69,0.942,0.69V24.099z
+								 M129.947,9.498c-0.344-0.023-0.713-0.046-1.104-0.046c-2.115,0-3.932,0.506-3.932,2.23v0.828h4.599v-0.782
+								C129.51,10.854,129.671,10.118,129.947,9.498z"/>
+							<path style="fill:#EDEDED;" d="M149.476,21.156c1.012,0,1.793-0.207,2.552-0.529v3.127c-0.759,0.368-1.655,0.575-2.921,0.575
+								c-4.254,0-5.817-2.162-5.817-6.07c0-3.909,1.563-6.071,5.817-6.071c1.266,0,2.162,0.207,2.921,0.575v3.127
+								c-0.759-0.322-1.54-0.529-2.552-0.529c-1.519,0-2.553,0.713-2.553,2.897C146.923,20.443,147.958,21.156,149.476,21.156z"/>
+							<path style="fill:#EDEDED;" d="M157.042,19.478c-0.092,1.495,0.689,1.931,2.483,1.931c1.725,0,3.013-0.345,3.841-0.759v2.875
+								c-1.334,0.552-2.943,0.805-4.324,0.805c-3.793,0-5.633-1.932-5.633-6.07c0-4.139,1.816-6.071,5.381-6.071
+								c4.92,0,5.266,3.679,4.967,7.29H157.042z M157.042,17.224h3.266c0.207-1.265-0.069-2.276-1.473-2.276
+								C157.594,14.947,157.042,15.775,157.042,17.224z"/>
+							<path style="fill:#EDEDED;" d="M169.716,18.259c0-3.587,1.149-6.071,5.403-6.071c4.255,0,5.403,2.483,5.403,6.071
+								c0,3.587-1.148,6.07-5.403,6.07C170.866,24.329,169.716,21.846,169.716,18.259z M173.395,18.259c0,2.299,0.46,3.127,1.725,3.127
+								s1.725-0.828,1.725-3.127c0-2.3-0.46-3.127-1.725-3.127S173.395,15.959,173.395,18.259z"/>
+							<path style="fill:#EDEDED;" d="M190.183,9.912c-0.344-0.161-0.873-0.414-1.793-0.414c-0.805,0-1.518,0.345-1.518,1.426v1.586h2.967
+								v3.059h-2.967v8.439h-3.68v-8.439h-1.862v-2.438l1.862-0.506v-2.139c0-2.713,1.495-4.047,4.829-4.047
+								c0.506,0,1.54,0.115,2.161,0.391V9.912z"/>
+							<path style="fill:#EDEDED;" d="M104.811,44.008V26.761h3.679v17.247H104.811z"/>
+							<path style="fill:#EDEDED;" d="M113.044,32.51l0.46,0.828c1.288-0.782,2.736-1.15,4.001-1.15c3.127,0,4.024,1.656,4.024,3.863
+								v7.957h-3.679v-7.404c0-0.852-0.299-1.426-1.288-1.426c-0.897,0-1.702,0.367-2.047,0.598v8.232h-3.679V32.51H113.044z"/>
+							<path style="fill:#EDEDED;" d="M125.693,32.51l0.46,0.828c1.287-0.782,2.736-1.15,4-1.15c3.128,0,4.025,1.656,4.025,3.863v7.957
+								h-3.68v-7.404c0-0.852-0.299-1.426-1.287-1.426c-0.897,0-1.702,0.367-2.047,0.598v8.232h-3.68V32.51H125.693z"/>
+							<path style="fill:#EDEDED;" d="M135.675,38.259c0-3.587,1.15-6.071,5.404-6.071s5.404,2.484,5.404,6.071s-1.15,6.07-5.404,6.07
+								S135.675,41.846,135.675,38.259z M139.355,38.259c0,2.3,0.46,3.127,1.725,3.127c1.266,0,1.725-0.827,1.725-3.127
+								s-0.459-3.128-1.725-3.128C139.815,35.131,139.355,35.959,139.355,38.259z"/>
+							<path style="fill:#EDEDED;" d="M151.223,44.191l-4.277-11.682h3.841l2.023,7.129l2.023-7.129h3.84l-4.277,11.682H151.223z"/>
+							<path style="fill:#EDEDED;" d="M165.298,35.959c0-0.529-0.367-0.805-1.356-0.805c-1.448,0-3.128,0.438-4.14,0.873v-3.08
+								c0.782-0.346,2.507-0.76,4.14-0.76c4.14,0,4.921,1.771,4.921,4.347v7.474h-2.207l-0.506-0.875
+								c-0.828,0.736-2.001,1.196-3.381,1.196c-2.92,0-3.909-1.932-3.909-3.656c0-3.104,2.276-3.563,4.347-3.771l2.092-0.207V35.959z
+								 M163.757,38.902c-1.034,0.139-1.448,0.645-1.448,1.541c0,0.851,0.552,1.356,1.334,1.356c0.667,0,1.288-0.185,1.655-0.552v-2.553
+								L163.757,38.902z"/>
+							<path style="fill:#EDEDED;" d="M178.085,44.1c-0.506,0.138-1.379,0.229-1.885,0.229c-3.22,0-4.438-1.356-4.438-4.069v-4.691H169.9
+								v-2.438l1.862-0.506v-2.369l3.679-0.988v3.242h2.852v3.059h-2.852v4.393c0,0.896,0.346,1.402,1.518,1.402
+								c0.483,0,0.943-0.092,1.127-0.139V44.1z"/>
+							<path style="fill:#EDEDED;" d="M181.744,26.991c1.219,0,2.186,0.966,2.186,2.185c0,1.242-0.967,2.184-2.186,2.184
+								c-1.241,0-2.184-0.941-2.184-2.184C179.56,27.957,180.502,26.991,181.744,26.991z M184.503,44.1c0,0-0.482,0.092-1.058,0.092
+								c-1.978,0-3.541-1.012-3.541-3.242V32.51h3.656v7.934c0,0.437,0.206,0.689,0.942,0.689V44.1z"/>
+							<path style="fill:#EDEDED;" d="M185.654,38.259c0-3.587,1.15-6.071,5.404-6.071s5.404,2.484,5.404,6.071s-1.15,6.07-5.404,6.07
+								S185.654,41.846,185.654,38.259z M189.333,38.259c0,2.3,0.46,3.127,1.725,3.127c1.266,0,1.725-0.827,1.725-3.127
+								s-0.459-3.128-1.725-3.128C189.793,35.131,189.333,35.959,189.333,38.259z"/>
+							<path style="fill:#EDEDED;" d="M200.281,32.51l0.461,0.828c1.287-0.782,2.736-1.15,4-1.15c3.128,0,4.025,1.656,4.025,3.863v7.957
+								h-3.68v-7.404c0-0.852-0.299-1.426-1.287-1.426c-0.897,0-1.702,0.367-2.047,0.598v8.232h-3.68V32.51H200.281z"/>
+							<path style="fill:#EDEDED;" d="M215.509,51.666v-4.211h-3.057v4.211h-2.146V41.607h2.146v3.889h3.057v-3.889h2.146v10.059H215.509z
+								"/>
+							<path style="fill:#EDEDED;" d="M225.285,51.197l2.375,0.482v2.16l-6.331-2.187c-1.958-0.685-2.509-2.454-2.509-5.017
+								c0-3.071,0.832-5.217,4.011-5.217c3.165,0,4.011,2.146,4.011,5.217c0,2.039-0.376,3.688-1.557,4.547V51.197z M220.994,46.637
+								c0,2.348,0.51,3.273,1.837,3.273c1.328,0,1.838-0.926,1.838-3.273s-0.51-3.272-1.838-3.272
+								C221.503,43.364,220.994,44.289,220.994,46.637z"/>
+						</g>
+					</g>
+				</a>
+				</svg>
+
+			</span>
+			<nav id="desktop-nav" class="desktop main-menu"><ul id="desktop-menu" class="desktop-list"><li id="menu-item-31551" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-31551"><a href="https://innovation.mit.edu/innovation-infrastructure/ihq/">MIT InnovationHQ</a></li>
+<li id="menu-item-31552" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-31552"><a href="https://innovation.mit.edu/student-community-activation/">Students/Community</a>
+<ul class="sub-menu">
+	<li id="menu-item-31748" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-31748"><a href="https://innovation.mit.edu/resources/">Innovation &#038; Entrepreneurship Resources</a></li>
+	<li id="menu-item-32325" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-32325"><a href="https://innovation.mit.edu/inclusive-innovation-summer-grant/">2022 Inclusive Innovation Summer Grant</a></li>
+	<li id="menu-item-32451" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-32451"><a href="https://innovation.mit.edu/internship-job-opportunities/">Internship &#038; Job Opportunities</a></li>
+	<li id="menu-item-31753" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-31753"><a href="https://innovation.mit.edu/education-community/pathways/">Student Pathway Stories</a></li>
+	<li id="menu-item-31749" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-31749"><a href="https://innovation.mit.edu/news-updates/events-opportunities/">Events &#038; Opportunities</a></li>
+	<li id="menu-item-31751" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-31751"><a href="https://innovation.mit.edu/education-community/classes/">Classes</a></li>
+	<li id="menu-item-31750" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-31750"><a href="https://innovation.mit.edu/education-community/eiminor/">Entrepreneurship &#038; Innovation Minor</a></li>
+	<li id="menu-item-31757" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-31757"><a href="https://innovation.mit.edu/community-innovation-micro-grants/">Community Innovation Micro-Grants</a></li>
+	<li id="menu-item-31752" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-31752"><a href="https://innovation.mit.edu/mentoring-opportunities/">Mentoring Opportunities</a></li>
+</ul>
+</li>
+<li id="menu-item-31554" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-31554"><a href="https://innovation.mit.edu/news-updates/events-opportunities/">Events &#038; Opportunities</a></li>
+<li id="menu-item-31553" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-31553"><a href="https://innovation.mit.edu/dei/">Diversity/Equity/Inclusion</a>
+<ul class="sub-menu">
+	<li id="menu-item-31754" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-31754"><a href="https://innovation.mit.edu/wisdm/">WISDM</a></li>
+	<li id="menu-item-32326" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-32326"><a href="https://innovation.mit.edu/inclusive-innovation-summer-grant/">2022 Inclusive Innovation Summer Grant</a></li>
+	<li id="menu-item-31755" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-31755"><a href="https://innovation.mit.edu/ideas-to-impact/inclusion/news-2/">Celebrating Women in Innovation and Entrepreneurship</a></li>
+	<li id="menu-item-31756" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-31756"><a href="https://innovation.mit.edu/inclusive-innovation-grant-program/">Inclusive Innovation Grant Program</a></li>
+	<li id="menu-item-31758" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-31758"><a href="https://innovation.mit.edu/inclusive-innovation-news/">Inclusive Innovation News</a></li>
+</ul>
+</li>
+<li id="menu-item-31555" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-31555"><a href="https://innovation.mit.edu/news-updates/">News</a></li>
+<li id="menu-item-31793" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-31793"><a href="https://innovation.mit.edu/venture-building-2/">Venture-Building</a></li>
+</ul></nav>
+			<button id="toggle-menu">
+				<span></span>
+			</button>
+			<div id="mobile-menu-wrap">
+				<nav id="mobile-nav" class="mobile mobile-menu"><ul id="mobile-menu" class="mobile-nav"><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-31551"><a href="https://innovation.mit.edu/innovation-infrastructure/ihq/">MIT InnovationHQ</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-31552"><a href="https://innovation.mit.edu/student-community-activation/">Students/Community</a>
+<ul class="sub-menu">
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-31748"><a href="https://innovation.mit.edu/resources/">Innovation &#038; Entrepreneurship Resources</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-32325"><a href="https://innovation.mit.edu/inclusive-innovation-summer-grant/">2022 Inclusive Innovation Summer Grant</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-32451"><a href="https://innovation.mit.edu/internship-job-opportunities/">Internship &#038; Job Opportunities</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-31753"><a href="https://innovation.mit.edu/education-community/pathways/">Student Pathway Stories</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-31749"><a href="https://innovation.mit.edu/news-updates/events-opportunities/">Events &#038; Opportunities</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-31751"><a href="https://innovation.mit.edu/education-community/classes/">Classes</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-31750"><a href="https://innovation.mit.edu/education-community/eiminor/">Entrepreneurship &#038; Innovation Minor</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-31757"><a href="https://innovation.mit.edu/community-innovation-micro-grants/">Community Innovation Micro-Grants</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-31752"><a href="https://innovation.mit.edu/mentoring-opportunities/">Mentoring Opportunities</a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-31554"><a href="https://innovation.mit.edu/news-updates/events-opportunities/">Events &#038; Opportunities</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-31553"><a href="https://innovation.mit.edu/dei/">Diversity/Equity/Inclusion</a>
+<ul class="sub-menu">
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-31754"><a href="https://innovation.mit.edu/wisdm/">WISDM</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-32326"><a href="https://innovation.mit.edu/inclusive-innovation-summer-grant/">2022 Inclusive Innovation Summer Grant</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-31755"><a href="https://innovation.mit.edu/ideas-to-impact/inclusion/news-2/">Celebrating Women in Innovation and Entrepreneurship</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-31756"><a href="https://innovation.mit.edu/inclusive-innovation-grant-program/">Inclusive Innovation Grant Program</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-31758"><a href="https://innovation.mit.edu/inclusive-innovation-news/">Inclusive Innovation News</a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-31555"><a href="https://innovation.mit.edu/news-updates/">News</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-31793"><a href="https://innovation.mit.edu/venture-building-2/">Venture-Building</a></li>
+</ul></nav>
+					
+				</div>
+
+		</div>
+	</div>
+</header>
+<div id="resource" class="page-title post-page">
+    <div class="wrapper">
+        <h1>Resources</h1>
+    </div>
+</div>
+
+<div class="wrapper remove-padding-mob">
+
+<div class="single-article gray-wrap">
+
+    <div class="white-wrap clearfix">
+        <div class="title-teaser-box">
+            <div class="post-meta">
+
+                                                    
+                <div class="title">
+                    <h1>designX</h1>
+                                            <p>An entrepreneurial accelerator for student ventures, with a vision to transform the built environment, media and design</p>
+                                    </div>
+            </div>
+
+            <div class="featured-image image-wrapper">
+                                    <img alt="" src="https://innovation.mit.edu/assets/arch-2-680x420.jpg"/>
+                                            </div>
+
+
+        </div>
+        <article class="content-main">
+
+            <p><a href="https://innovation.mit.edu/assets/designx-logo-light-w450.png" rel="attachment wp-att-6730"><img class="aligncenter wp-image-6730 size-medium" src="https://innovation.mit.edu/assets/designx-logo-light-w450-300x100.png" alt="designx-logo-light-w450" width="300" height="100" srcset="https://innovation.mit.edu/assets/designx-logo-light-w450-300x100.png 300w, https://innovation.mit.edu/assets/designx-logo-light-w450-120x40.png 120w, https://innovation.mit.edu/assets/designx-logo-light-w450-155x52.png 155w, https://innovation.mit.edu/assets/designx-logo-light-w450.png 450w" sizes="(max-width: 300px) 100vw, 300px" /></a>designX is an academic platform dedicated to advancing innovation and entrepreneurship in design, cities and the built environment.</p>
+<p>The program fosters interdisciplinary design innovation between all of the departments in SA+P — including architecture, planning, real estate, art and media arts — and supports real-world application of their academic work.</p>
+<p>The designX accelerator program empowers a select group of ventures with funding, vigorous entrepreneurship curriculum, mentorship and business plan preparation. The accelerator runs annually, hosting a competitively chosen cohort of 8–10 startup teams.</p>
+<p>designX extends collaboration to other entities across MIT, creates a strong community with alumni and design industry, and bridges the divide between academia and practice in the fields of design and the built environment. The designX research platform creates and disseminates new knowledge about design innovation, to discover what the built environment needs, and use that knowledge to lead a new culture of exponential design.</p>
+<p>The designX Design Entrepreneurship Center (Bldg. 7, MIT 7-338) is a hub for design-entrepreneurship, bringing together students, affiliates, alumni and faculty — from SA+P and beyond — who are interested in design innovation. The center welcomes anyone in the broader MIT community to find the resources, workshops and seminars, social events, mentorship and co-founders they need to power design ventures.</p>
+<p><strong>Contact</strong></p>
+<ul>
+<li><a href="mailto:designx@mit.edu">designx@mit.edu</a></li>
+</ul>
+
+                    <div class="follow-us">
+                            </div>
+            </article>
+                <div style="text-align: center; margin: 20px auto;" class="go-to-wrapper">
+                <a  target="_blank" href="http://designx.mit.edu/" class="btn">Go to designX</a>
+            </div>
+    
+</div>
+</div>
+</div>
+
+
+    <div class="recent-posts">
+        <div class="wrapper">
+            <ul class="post-list query-results clearfix card-post-container">
+            <li class="post card-post-layout news-article-post">
+            <a href="https://innovation.mit.edu/news-article/entrepreneurship-by-design/">
+            <div class="ne-image">
+                        <img alt="" src="https://innovation.mit.edu/assets/designx-mit-sap_0-522x353.jpg"/>
+            
+        </div>
+        </a>
+        <div class="ne-content">
+            <div class="meta-content">
+                                    <a class="" href="https://innovation.mit.edu/news-updates/news/">News</a>
+                    <time class="date">10/17/2016</time>
+                            </div>
+
+            <div class="title-excerpt">
+                <h3>Entrepreneurship by Design</h3>
+                <p>New DesignX accelerator speeds innovation at the School of Architecture and Planning.</p>
+                
+                                     <a href="https://innovation.mit.edu/news-article/entrepreneurship-by-design/" class="read-more pink">
+                
+
+                Read Story</a>
+            </div>
+
+        </div>
+
+    </a>
+</li>
+<li class="post card-post-layout news-article-post">
+            <a href="https://innovation.mit.edu/news-article/design-innovations-improved-life-cities/">
+            <div class="ne-image">
+                        <img alt="" src="https://innovation.mit.edu/assets/designx-pitch-night-mit-2017_0-522x353.jpg"/>
+            
+        </div>
+        </a>
+        <div class="ne-content">
+            <div class="meta-content">
+                                    <a class="" href="https://innovation.mit.edu/news-updates/news/">News</a>
+                    <time class="date">06/13/2017</time>
+                            </div>
+
+            <div class="title-excerpt">
+                <h3>Design Innovations for Improved Life in Cities</h3>
+                <p>Venture accelerator DesignX unleashes entrepreneurs’ ideas to transform the built environment.</p>
+                
+                                     <a href="https://innovation.mit.edu/news-article/design-innovations-improved-life-cities/" class="read-more pink">
+                
+
+                Read Story</a>
+            </div>
+
+        </div>
+
+    </a>
+</li>
+            <li class="card-post-layout no-margin"></li>
+                    <li class="card-post-layout no-margin"></li>
+            </ul>
+        <div class="wrapper more-news">
+            <a href="https://innovation.mit.edu/news-updates/news/" class="btn">More News</a>
+        </div>
+
+        </div>
+
+
+    </div>
+<footer class="new-footer">
+    <div class="wrapper clearfix">
+        <div class="foot-column-one">
+            <img src="https://innovation.mit.edu/wp-content/themes/mit-ii/ui/svg/logo-footer.svg"/>
+            <div class="address-wrap">
+                <address>MIT InnovationHQ<br />
+Massachusetts Institute of Technology<br />
+<br />
+Physical: <br />
+292 Main Street (E38), Floor 6<br />
+Cambridge, MA 02142<br />
+ <br />
+Mailing:  <br />
+400 Main Street, Bldg. E38 – Mailroom 349<br />
+Cambridge, MA 02142</address>
+              
+                <a href="https://accessibility.mit.edu/" target="_blank" class="accessibility-link">Accessibility</a> 
+             
+                <span class="jackrabbit"><a href="http://www.jumpingjackrabbit.com" title="Website Design by Jackrabbit" target="_blank">Website Design</a> by <a href="http://www.jumpingjackrabbit.com" title="Website Design by Jackrabbit" target="_blank">Jackrabbit</a></span>
+                <p class="copyright">&copy; 2022 All rights reserved.</p>
+            </div>
+        </div>
+
+        <div class="foot-column-two">
+            <ul id="utility-menu-footer" class="utility"><li id="menu-item-3771" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3771"><a href="https://innovation.mit.edu/about/">About</a></li>
+<li id="menu-item-5247" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5247"><a href="https://innovation.mit.edu/about/team/">Team</a></li>
+<li id="menu-item-3770" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3770"><a href="https://innovation.mit.edu/support/">Support</a></li>
+<li id="menu-item-3772" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3772"><a href="https://innovation.mit.edu/lets-keep-in-touch/">Contact</a></li>
+<li id="menu-item-32156" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-32156"><a href="https://innovation.mit.edu/documents-library/">Documents Library</a></li>
+<li id="menu-item-32514" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-32514"><a href="https://innovation.mit.edu/procurement/">Procurement</a></li>
+</ul>                <ul class="social">
+                                        <li><a target="_blank" href="https://www.instagram.com/mitinnovation/"><i class="social-instagram"></i></a></li>
+                                    <li><a target="_blank" href="https://www.linkedin.com/company/10527732?trk=tyah&trkInfo=clickedVertical%3Acompany%2CclickedEntityId%3A10527732%2Cidx%3A2-1-2%2CtarId%3A1461352058605%2Ctas%3Amit%20innovation%20in"><i class="social-linkedin"></i></a></li>
+                                    <li><a target="_blank" href="https://twitter.com/MIT_Innovation"><i class="social-twitter"></i></a></li>
+                            </ul>
+                    </div>
+
+    </div>
+</footer>
+  <script type='text/javascript' src='https://innovation.mit.edu/wp-content/themes/mit-ii/ui/js/min/jquery.plugins-min.js'></script>
+<script type='text/javascript' src='https://innovation.mit.edu/wp-content/themes/mit-ii/ui/js/min/jquery.init-min.js'></script>
+<script type='text/javascript' src='https://innovation.mit.edu/wp-includes/js/wp-embed.min.js?ver=d29507f82ac33bae16bc2d5be3851a48'></script>
+  <script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"ab0374a39e","applicationID":"112197439","transactionName":"Z1QGZBZQVkNYU0YNWV4eJVMQWFdeFkNbClFcVA==","queueTime":0,"applicationTime":255,"atts":"SxMFEl5KRU0=","errorBeacon":"bam.nr-data.net","agent":""}</script></body>
+  </html>
